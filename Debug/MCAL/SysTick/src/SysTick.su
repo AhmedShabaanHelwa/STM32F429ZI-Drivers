@@ -1,0 +1,5 @@
+core_cm4.h:1550:22:NVIC_SetPriority	16	static
+core_cm4.h:1677:26:SysTick_Config	16	static
+SysTick.c:17:31:SysTick_vidInit	8	static
+SysTick.c:24:31:SysTick_vidDelay	24	static
+SysTick.c:35:32:SysTick_u32GetCurrentTick	4	static
