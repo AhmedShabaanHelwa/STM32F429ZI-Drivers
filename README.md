@@ -7,3 +7,7 @@ Development A Practical Approach to APIs, HALs and Drivers " Apress 2017, Master
 
 The drivers were developed using Attolic TrueStudio 9.3.0, ARM-GCC toolchain and tested on STM32F429I-DISC1 evaluation kit.
 The drivers libraries is based on ARM CMSIS V3.20.
+
+The library is continuously upadted.
+Current Release: 1.0.0
+Udate Time: 18/01/2020
