@@ -62,11 +62,11 @@ typedef enum{
 #define GPIO_U8CHANNEL_106			(uint8)0x6A
 #define GPIO_U8CHANNEL_107			(uint8)0x6B
 #define GPIO_U8CHANNEL_108			(uint8)0x6C
-#define GPIO_U8CHANNEL_109			(uint8)0x6D
-#define GPIO_U8CHANNEL_110			(uint8)0x6E
+#define GPIO_U8CHANNEL_109			(uint8)0x6D	/*GREEN LED*/
+#define GPIO_U8CHANNEL_110			(uint8)0x6E /*RED LED*/
 #define GPIO_U8CHANNEL_111			(uint8)0x6F
 
-#define GPIO_U8MAX_NUM_CHANNELS		(uint8)16U
+#define GPIO_U8MAX_NUM_CHANNELS		(uint8)0x6F
 
 
 /****************************************************************************/

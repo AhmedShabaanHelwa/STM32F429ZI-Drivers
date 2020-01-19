@@ -1,0 +1,2 @@
+GPIO.c:19:31:GPIO_vidInit	24	static
+GPIO.c:161:31:GPIO_vidWriteChannel	24	static

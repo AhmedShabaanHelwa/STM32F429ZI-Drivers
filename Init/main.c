@@ -30,8 +30,8 @@ SOFTWARE.
 /* Includes */
 #include "stm32f4xx.h"
 #include "SysTick.h"
+#include "GPIO.h"
 
-void gpio_init(void);
 /* Private macro */
 /* Private variables */
 /* Private function prototypes */
@@ -58,7 +58,7 @@ int main(void)
   */
 	SysTick_vidInit();
 	/* GPIO Init */
-		gpio_init();
+	GPIO_vidInit();
   /* TODO - Add your application code here */
 
 
@@ -66,19 +66,11 @@ int main(void)
   /* Infinite loop */
 	while(1)
 	{
-		GPIOG -> BSRRL |= (1 << 13) | (1 << 14);
+		GPIO_vidWriteChannel(GPIO_U8CHANNEL_109, GPIO_ChannelHigh);
 		SysTick_vidDelay(1000);
-		GPIOG -> BSRRH |= (1 << 13) | (1 << 14);
+		GPIO_vidWriteChannel(GPIO_U8CHANNEL_109, GPIO_ChannelLow);
 		SysTick_vidDelay(1000);
 	}
 	//Lab1_vidMain();
 }
 
-
-void gpio_init(void)
-{
-	/* @note: minimal gpio configuratios are used */
-	RCC -> AHB1ENR |= RCC_AHB1ENR_GPIOGEN;
-	GPIOG -> MODER |= (GPIO_MODER_MODER13_0) | (GPIO_MODER_MODER14_0);
-
-}
